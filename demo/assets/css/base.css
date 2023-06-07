@@ -1,0 +1,54 @@
+@font-face {
+    font-family: linotte;
+    src: url(../fonts/Linotte\ Regular.ttf);
+}
+
+@font-face {
+    font-family: linotte;
+    src: url(../fonts/Linotte\ Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: linotte;
+    src: url(../fonts/Linotte\ Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: linotte;
+    src: url(../fonts/Linotte\ Semi\ Bold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: linotte;
+    src: url(../fonts/Linotte\ Heavy.ttf);
+    font-weight: 800;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.25s;
+    color: var(--text-color);
+    font-family: 'r0c0i Linotte';  
+}
+
+:root {
+    --error-color: #f87171;
+    --background-color: #171717;
+    --box-color: #212121;
+    --primary-color: #121212;
+    --special-color: #1746A2;
+    --text-color: #eeeeee;
+    --placeholder-color: #6c6c6c;
+    --dsc-color: #777;
+    --input-color: #b6b3ae;
+}
+
+body {
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
