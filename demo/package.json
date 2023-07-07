@@ -4,7 +4,9 @@
   "description": "demo only for learn and test",
   "main": ".src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ -o src/public/css/"
   },
   "keywords": [
     "demo",
@@ -18,9 +20,13 @@
   "author": "lebakhai",
   "license": "GPL-3.0",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "handlebars": "^4.7.7",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "node-sass": "^9.0.0",
+    "nodemon": "^1.14.9"
   }
 }
