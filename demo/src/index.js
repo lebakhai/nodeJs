@@ -21,8 +21,14 @@ app.get('/', (req, res) => {
     res.render("home");
 });
 
-app.get('/linux', (req, res) => {
-    res.render("linux");
-})
+app.get('/search', (req, res) => {
+    res.render("search");
+});
+
 // open web server
 app.listen(port, () => {console.log(`Success open web app at port: ${port}`)})
+
+// Print padding 
+setTimeout(() => {
+    console.log('\n')
+}, 0)
