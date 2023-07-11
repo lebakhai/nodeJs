@@ -9,6 +9,9 @@ const port = 1312;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 // setup express
 app.engine('hbs', handlebars.engine({
     extname: '.hbs'
@@ -25,10 +28,15 @@ app.get('/search', (req, res) => {
     res.render("search");
 });
 
+app.post('/search', (req, res) => {
+    console.log(req.body);
+    res.send("");
+});
+
 // open web server
-app.listen(port, () => {console.log(`Success open web app at port: ${port}`)})
+app.listen(port, () => {console.log(`Success open web app at port: ${port}`)});
 
 // Print padding 
 setTimeout(() => {
-    console.log('\n')
-}, 0)
+    console.log('\n');
+}, 0);

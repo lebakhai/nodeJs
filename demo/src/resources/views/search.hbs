@@ -1,8 +1,13 @@
 <div class="mt-4">
-    <form>
+    <form method="post">
         <div class="form-group">
-            <label for="search-input">Keywords</label>
-            <input type="text" name="q" class="form-control mt-3" id="search-input" placeholder="Enter keywords...">
+            <label for="gender-input">Keywords</label>
+            <select name="gender" class="form-control mt-3" id="search-input">
+                <option value="0">Choose Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="sucVat">Non-Binary (suc vat)</option>
+            </select>
         </div>
         <button type="submit" class="btn btn-primary mt-3">Search</button>
     </form>
