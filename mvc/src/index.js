@@ -10,6 +10,7 @@ const sass = require('node-sass');
 const port = 2008;
 
 // config library
+app.use(express.static(path.join(__dirname, 'public')));
 app.engine('hbs', handlebar.engine({
     extname: '.hbs'
 }));
@@ -22,4 +23,5 @@ app.get('/', (req, res) => {
 })
 
 // open webserver
+console.clear();
 app.listen(port, () => {console.log(`Open app success at: http://127.0.0.1:${port}`)})
