@@ -4,7 +4,8 @@
   "description": "MVC model demo",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ -o src/public/css/"
   },
   "keywords": [
     "demo",
@@ -14,5 +15,13 @@
     "useless"
   ],
   "author": "lebakhai",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0"
+  }
 }
